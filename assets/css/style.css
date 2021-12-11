@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    --setColor: rgb(255, 255,255,0.7);
+    --maincolor:#f4623a;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+body{
+    height: 3000px;
+}
+@font-face {
+    font-family: test;
+    src: url(../../assets/static/MerriweatherSans-Italic.ttf);
+}
+.navbar{ 
+
+position: fixed;
+width:100% ;
+overflow: auto;
+margin: 15px;
+}
+.navbar .container{
+    overflow: auto;
+}
+.logo{
+float: left;
+width: 35%;
+color:wheat;
+text-transform: capitalize;
+font-size: 30px;
+}
+.nav{
+float: left;
+width: 65%;
+
+text-align: right;
+font-size: 20px;
+}
+.nav .list{
+    list-style: none;
+}
+.list-item{
+    display: inline-block;
+}
+.link-nav{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-right: 15px;
+}
+
+.header-content{
+    background-color: grey;
+    height: 100vh;
+    background-image: url(../img/bg-masthead.jpg);
+    background-size: cover;
+    background-position:0px -150px  ;
+    background-repeat: no-repeat;
+}
+.header-content-item{
+    text-align: center;
+    padding: 300px;
+}
+.main-title{
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-top: -20px;
+}
+.line{
+    background-color: var(--maincolor);
+    height: 5px;
+    width: 80px;
+    display: block;
+    margin: 20px auto;
+}
+.main-description{
+    color:var(--setColor);
+    width: 65%;
+    margin: auto;
+    font-size: 19px;
+}
+.link{
+text-decoration: none;
+color: var(--setColor);
+display: block;
+text-transform: uppercase;
+font-weight: bold;
+
+
+width: 200px;
+margin: 30px auto;
+background-color: var(--maincolor);
+padding: 25px;
+border-radius: 39px; 
+
+}
+.overlay{
+   background: rgba(92, 77, 66, 0.8) 100% ;
+    height: 100%;
+}
+/*end header*/
+/*start about*/
+.about{
+    background-color: var(--maincolor);
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.about-heading{
+    color: white;
+}
+.about .line{
+    background-color: white;
+}
+.about-description{
+    color:var(--setColor);
+    margin: auto;
+    width: 40%;
+  font-size: 20px;
+}
+.about .link , .download .link {
+    background-color: white;
+    color: #000;
+    text-transform: uppercase;
+    
+}
+/* services*/
+.services{
+    padding-top: 100px;
+    text-align: center;
+   /* padding-bottom: 100px;*/
+}
+.services-heading{
+    text-transform: capitalize;
+}
+.services-items{
+    overflow: auto;
+}
+.services-item{
+    float: left;
+    width: 25%;
+    margin-top: 50px;
+
+}
+.services-item .fas{
+    color: var(--maincolor);
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+.service-title{
+ text-transform: capitalize;   
+
+}
+.service-description{
+    color: #6c757d;
+    width: 55%;
+    margin: auto;
+    font-size: 18px;
+    margin-top: 10px;
+
+}
+/*start portofolio*/
+/*
+.portofolio{
+    padding-top: 100px;
+}
+.portofolio-items{
+    overflow:hidden;
+}
+.portofolio img{
+    float: left;
+    width: 33.33%;
+}*/
+.portofolio{
+    padding-top: 300px;
+}
+.portofolio-items{
+    overflow: hidden;
+}
+.portofolio .portofolio-item{
+float: left;
+width: 33.33%;
+position: relative;
+}
+.portofolio img{
+display: block;
+}
+.portofolio .overlay{
+position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+background-color: var(--maincolor);
+opacity: 0;
+}
+.overlay-content{
+    text-align: center;
+    padding-top: 150px;
+}
+.portofolio-main{
+    color: var(--setColor);
+    font-size: 15px;
+
+}
+.portofolio-second{
+    color: white;
+    font-size: 20px;
+}
+.portofolio-item:hover .overlay{
+    opacity: .8;
+}
+.download{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color:#343a40;
+    text-align: center;
+}
+.download-heading{
+text-transform: capitalize;
+color: white;
+margin-bottom: 60px;
+}
+.contact{
+    padding-top: 100px;
+}
+.contact-heading{
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+.contact-description{
+    text-align: center;
+     color: #6c757d;
+     width: 37%;
+     margin: auto;
+     font-size: 20px;
+}
+.cotact-items{
+    padding-top: 40px;
+    overflow: auto;
+    width:60% ;
+    margin: auto;
+}
+.contact-item{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.content-item .fas{
+display: block;
+font-size: 40px;
+color: #6c757d;
+margin-bottom: 10px;
+}
+.footer{
+    margin-top: 50px;
+    background-color:  #f8f9fa;
+    text-align: center;
+    padding: 53px; ;
+}
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    body{
+        background-color: aqua;
+    }
+ }
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }*/
